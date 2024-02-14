@@ -31,8 +31,10 @@ app.use(function (req, res, next) {
 
 // Main
 app.get('/', (req, res) => {
-    res.render('home', {
-        title: "Test"
+    res.render('game', {
+        meta: {
+            title: "Colordle"
+        }
     });
 });
 

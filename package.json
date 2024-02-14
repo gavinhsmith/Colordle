@@ -1,6 +1,13 @@
 {
+  "name": "colordle",
+  "version": "1.0.0",
+  "description": "A Daily HEX Code Guessing Game!",
   "main": "app.js",
+  "scripts": {
+    "start": "node ."
+  },
   "keywords": [],
+  "author": "gavinhsmith <me@gavinhsmith.com> (https://gavinhsmith.com/)",
   "license": "MIT",
   "dependencies": {
     "body-parser": "^1.20.2",
