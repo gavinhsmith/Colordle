@@ -11,7 +11,7 @@ function DBFolderExist() {
     return fs.existsSync(path.join(__dirname, "../db"));
 }
 function makeDBFolder() {
-    if (!DBFolderExist()) fs.mkdirSync(path.join(__dirname, "../db"));
+    if (!DBFolderExist() && DATABASE_NAMES.length > 0) fs.mkdirSync(path.join(__dirname, "../db"));
     return DBFolderExist();
 }
 
